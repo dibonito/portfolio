@@ -1,0 +1,108 @@
+@charset "UTF-8"; /*faz com que tenha caracteres especiais (acentuações da nossa lingua)*/
+
+*{  /*seletor universal do css*/
+    margin: 0px; /*Tirando todas as margens do site*/
+    padding: 0px;  /*Tirando todas os espaços do site*/
+}
+body{ /*Corpo do nosso site*/
+    background: url(img/workspace-1280538_1280.jpg) no-repeat center top fixed;  /*Imagem de fundo do site e configurações para deixar a imagem fixa na página*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+ /*Fazendo as configurações do cabeçalho e dos links de navegação*/
+ .header{  
+    width: 100%;   /*Largura do cabeçalho*/
+    background-color: rgba(0, 0, 0, .3);   /*Dando a transparência para o cabeçalho*/
+    padding-top: 30px;  /*Dando espaçamento no topo*/
+    padding-bottom: 20px;   /*Dando espaçamento na parte inferior*/
+}
+
+.header ul{  /*Configurando as listas dentro do header*/
+    text-align: center;  /*Alinhando o texto das listas*/
+
+}
+
+.header ul li{  /*Configurando os conteúdos dentro da lista do header*/
+    list-style: none;  /*Tirando todas as marcações (A bolinha na frente de cada item)*/
+    display: inline-block; /*Deixando tudo em uma única linha*/
+}
+
+.header ul li a{   /*Configurando os links da âncora*/
+    display: block;  /*Posicionando os links lado a lado*/
+    text-decoration: none;  /*Tirando decoração do texto*/
+    text-transform: uppercase; /*Coloca todas letras em maiúscula*/
+    color: #ffffff;  /*Cor das letras*/
+    font-size: 1.1em;   /*Tamanho da fonte do texto no header*/
+    font-family: Arial, Helvetica, sans-serif;  /*Tipo da fonte (modelo)*/
+    letter-spacing: 2px;  /*Controlando os espaços em branco entre as letras*/
+    font-weight: normal;  /*Intensidade da fonte*/
+    padding-inline-start: 25px;  /*Evita definir uma distância para cada lado separadamente*/
+    transition: all ease 0.5s;  /*Definindo a transição entre dois estados de um elemento*/
+    border-radius: 5px;  /*Arredondando as bordas*/
+}
+
+.header ul li a:hover{  /*Mudando o elemento ao passar o cursor do mouse muda de cor*/
+    background-color: #e8e7f185;  /*Cor de fundo*/
+    cursor: pointer; /*deixando o cursor como ponteiro*/
+    
+} /*fim da configuração do header*/
+
+/*Configurando os conteúdos do site*/
+main{
+    min-width: 300px;  /*Largura mínima*/
+    max-width: 1000px;  /*Largura máxima*/
+    margin: auto;  /*Margem automática*/
+    margin-bottom: 30px;  /*Dando margem na parte inferior*/
+    padding: 20px;   /*distância em todo o conteúdo*/
+    background-color: white; /*cor de fundo da página de leitura*/
+    border-bottom-left-radius: 10px;  /*Deixando arredondada a borda inferior do lado esquerdo */
+    border-bottom-right-radius: 10px;  /*Deixando arredondada a borda inferior do lado direito */
+    overflow: auto; /*Tirando a rolagem lateral*/
+    padding-left: 80px;  /*dando distância do lado esquerdo*/
+    padding-top: 60px;  /*Dando distância na parte superior*/
+    color: #262729;  /*Cor das letras*/
+}
+p{ /*Parágrafo*/
+    font-family: Arial, Helvetica, sans-serif; /*Tipo da família da fonte*/
+    color: #262729;  /*Cor da fonte*/
+}
+h5{  /*Subtítulo*/
+    font-family: 'Times New Roman', Times, serif;  /*Tipo da família da fonte*/
+    color: #262729;  /*Cor da fonte*/
+    font-weight: bold; /*Deixando a fonte em negrito*/
+    font-size: 1.2em;  /*Tamanho da fonte*/
+}
+
+/*Configurando o aside*/
+aside h1{  /*Configurando o h1 do aside*/
+    width: 100%; /*Largura*/
+    text-align: center; /*cetralizando o título*/
+    font-family: 'Times New Roman', Times, serif; /*Tipo da família da fonte*/
+    font-weight: bold; /*Deixando a fonte em negrito*/
+    font-size: 2.5em;   /*Tamanho da fonte*/
+}
+aside{
+    color: #262729;  /*Cor da fonte*/
+    padding-top: 30px;  /*Dando distância na parte superior*/
+    padding-bottom: 50px; /*Dando distância na parte inferior */
+}
+aside h3{ /*Configurando o h3 do aside*/
+    font-family: 'Times New Roman', Times, serif;  /*Tipo da família da fonte*/
+    font-weight: bold; /*Deixando a fonte em negrito*/
+    font-size: 1.6em;  /*Tamanho da fonte*/
+}
+aside img{
+    padding-left: -8%;  /*dando distância do lado esquerdo da imagem*/
+}
+aside p{
+    padding-left: 10px; /*dando distância do lado esquerdo do parágrafo*/
+}
+
+.container{ /*Confirurando a classe container para deixar o texto junto com a imagem*/
+    display: flex; /*Deixando o elemento flexível */
+    vertical-align: top;  /*Deixando a mensagem no topo junto com a imagem*/
+}

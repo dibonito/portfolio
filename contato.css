@@ -1,0 +1,169 @@
+@charset "UTF-8"; /*faz com que tenha caracteres especiais (acentuações da nossa lingua)*/
+
+*{  /*seletor universal css*/
+    margin: 0px;   /*Tirando todas as margens do site*/
+    padding: 0px;  /*Tirando todos os espaçamentos do site*/
+}
+
+/*Fonte baixada do Google Fonts*/
+@import url('https://fonts.googleapis.com/css2? family= Domine:wght@400;500;600;700 & display=swap');
+
+ /*Fazendo as configurações do cabeçalho e dos links de navegação*/
+ body{/*Corpo do nosso site*/
+    background: url(img/workspace-1280538_1280.jpg) no-repeat center top fixed; /*Imagem de fundo do site e configurações para deixar a imagem fixa na página*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+ }
+ .header{  /*Configurando o cabeçalho*/
+    width: 100%;   /*Largura*/
+    background-color: rgba(0, 0, 0, .3);   /*Dando a transparência para o cabeçalho*/
+    padding-top: 30px;  /*Dando espaçamento do topo do cabeçalho*/
+    padding-bottom: 20px;  /*Dando espaçamento de baixo do cabeçalho*/
+}
+
+.header ul{  /*Configurando as listas dentro do header*/
+    text-align: center;  /*Alinhando o texto das listas*/
+
+}
+
+.header ul li{  /*Configurando os conteúdos dentro da lista do header*/
+    list-style: none;  /*Tirando todas as marcações (A bolinha na frente de cada item)*/
+    display: inline-block; /*Deixando tudo em uma única linha*/
+}
+
+.header ul li a{   /*Configurando os links da âncora*/
+    display: block;  /*bloqueado os links */
+    text-decoration: none;  /*Tirando decoração do texto*/
+    text-transform: uppercase; /*Coloca todas letras em maiúscula*/
+    color: #ffffff;  /*Cor das letras*/
+    font-size: 1.1em;   /*Tamanho da fonte do texto no header*/
+    font-family: Arial, Helvetica, sans-serif;  /*Tipo da fonte (modelo)*/
+    letter-spacing: 2px;  /*Controlando os espaços em branco entre as letras*/
+    font-weight: normal;  /*Intensidade da fonte*/
+    padding-inline-start: 25px;  /*Evita definir uma distância para cada lado separadamente*/
+    transition: all ease 0.5s;  /*Definindo a transição entre dois estados de um elemento*/
+    border-radius: 5px;  /*Arredondando as bordas*/
+}
+
+.header ul li a:hover{  /*Mudando o elemento ao passar o cursor do mouse muda de cor*/
+    background-color: #e8e7f185;  /*Cor de fundo*/
+    cursor: pointer;  /*deixando o cursor como ponteiro*/
+    
+} /*Fim do cabeçalho*
+
+
+/*Configurando o formulário*/
+label, input{ 
+    display: block; /*fazendo o elemento seja renderizado como bloco*/
+    width: 100%; /*Largura*/
+    text-align: left;  /*Alinhando os texto para o lado esquerdo*/
+    padding: 10px; /*Dando um espaçamento entre o elemento e a borda*/
+}
+
+label{
+    color: rgb(51, 50, 50);  /*Cor da fonte da label*/
+    font-weight: bold;  /*Deixando a fonte label em negrito*/
+}
+
+#login-container, .container {
+    background-color: #fff;  /*cor de fundo do formulário*/
+    max-width: 500px;/*Largura que vai ter o formulário*/
+    margin-left: 10%;  /*Definindo a distância do lado esquerdo*/
+    padding: 20px 40px; /*Dando um espaçamento entre o elemento e a borda*/
+    margin-top: 10vh;  /*distância do topo*/
+    border-radius: 10px;  /*Deixando as bordas arredondadas*/
+    text-align: center;  /*Colocando o texto no centro*/
+}
+
+textarea:focus, input:focus{ /* Dando foco nos elementos onde a pessoa vai digitar*/
+    outline: none; /*Deixando a área limpa sem linhas*/
+}
+a, label{ 
+    font-size: 1em; /*Tamanho da fonte*/
+    font-family: Arial, Helvetica, sans-serif;  /*tipo de fonte (Famíla da fonte)*/
+}
+
+input:focus{  /*Dando foco no elemento*/
+    border-bottom: 2px solid #3b3b3b;  /*largura e cor da borda de baixo*/
+}
+
+#submit{ /*Iniciando a configuração do botão*/
+    width: 100%;  /*largura do botão*/
+    height: 35px;   /*Altura do botão*/
+    text-align: center;  /*Texto dentro do botão*/
+    text-transform: uppercase;  /*Colocando as letras em maiúsculas*/
+    font-weight: bold;  /*Deixando as letras em negrito*/
+    border: none;  /*Tirando a linha da borda*/
+    border-radius: 20px;  /*Arredondando as bordas*/
+    margin-top: 30px;  /*dando uma margem do topo*/
+    color: #fff;  /*Cor da letra*/
+    background-color: #4b3527;  /*Cor do botão*/
+    cursor: pointer;  /*Deixando o cursor como ponteiro ao passar o mouse*/
+}
+button[type="submit"]:hover{  /*mudando a cor do botão quando o mouse passar sobre o botão*/
+    opacity: 0.85; /*Opacidade (vai ficar mais claro o botão)*/
+    transition: .5s;  /*Transição de quando passar o mouse*/
+}
+
+
+/*Configurando icones das Redes Sociais*/
+#social-container p{  /*id e parágrafo*/
+    margin-bottom: 20px; /*Dando margem de baixo do botão*/
+}
+
+#register-container{ /*id*/
+    margin-bottom: 10px; /*Dando margem de baixo do botão*/
+}
+div > h1{ 
+    font-family: 'Domine', serif; /*Tipo da fonte*/
+    font-weight: bold;  /*deixando a fonte em negrito*/
+    color: rgb(51, 50, 50);  /*cor da letra*/
+}
+.mensagem{  /*Classe*/
+    font-family: Arial, Helvetica, sans-serif;  /*Tipo da fonte*/
+    font-weight: bold;  /*Deixando a fonte em negrito*/
+    color: rgb(51, 50, 50);  /*Cor das letras*/
+    font-size: 1.1em;  /*Tamanho das letars*/
+}
+.formulario{ /*Classe*/
+    padding-bottom: 5%;  /*Dando distância na parte inferior */
+}
+.formulario > nav{  /*classe e navegação*/
+    background-color: black;  /*Cor de fundo*/
+}
+.container input{ 
+    margin: 10px 10px; /*Definindo margem para todas as posições*/
+    width: calc(100% - 20px); /*Define a largura do elememnto*/
+    height: 70px; /*Altura do input*/
+    border: none; /*Remove a borda*/
+    background-color: #ededed;  /*Cor de fundo do input*/
+    border-radius: 4px;  /*Bordas arredondadas*/
+    color: #333; /*Cor da fonte*/
+    font-size: 18px; /*Tamanho da fonte*/
+    font-weight: 700; /*Aumenta a largura do contorno do texto*/
+    padding:  14px 10px 0 10px; /*Gera espaço ao redor do conteúdo do elemento (superior, direito, inferior e equerdo)*/
+}
+.container{
+    position: relative;  /*Posição relativa onde o elemento será posicionado de acordo com a página*/
+}
+.container label{
+    text-transform: uppercase;  /*Deixando as letras em maiúscula*/
+    font-size: 14px;  /*Tamanho da fonte*/
+    font-weight: 700;  /*Deixando a fonte mais para o negrito*/
+    color: #9d9d9d;  /*Cor da fonte*/
+    position: absolute; /*Posiciona qualquer elemento de acordo com o elemento pai, deixando de fazer parte do fluxo do documento */
+    line-height: 70px; /*Define a altura entre linhas*/
+    top: 10px; /*Posição vertical que nescessita que o elemento tenha uma posição determinada */
+    left: 20px; /*Distância da borda esquerda*/
+    user-select: none; /*Impede a seleção do texto*/
+    pointer-events: none; /*Se o elemento deve agir ou não a eventos do ponteiro*/
+
+    transition: 0.5s; /*Altera os valores das propiedades suavemente em um tempo determinado*/
+}
+
+#social-container{
+    padding-right: 10px;  /*Dando um espaçamento do lado direito*/
+}
+

@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+*{  /*seletor universal css*/
+    margin: 0;  /*Tirando todas as margens do site*/
+    padding: 0;  /*Tirando todos os espaçamentos do site*/ 
+
+}
+
+/*Fazendo as configurações do cabeçalho e dos links de navegação*/
+body{  /*Corpo do nosso site*/
+    background: url(img/workspace-1280538_1280.jpg) no-repeat center top fixed;  /*Imagem de fundo do site e configurações para deixar a imagem fixa na página*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    
+}
+ /*Fazendo as configurações do cabeçalho e dos links de navegação*/
+.header{  
+    width: 100%;   /*Largura do cabeçalho*/
+    background-color: rgba(0, 0, 0, .3);   /*Dando a transparência para o cabeçalho*/
+    padding-top: 20px;
+}
+
+.header ul{  /*Configurando as listas dentro do header*/
+    text-align: center;  /*Alinhando o texto das listas*/
+
+}
+
+.header ul li{  /*Configurando os conteúdos dentro da lista do header*/
+    list-style: none;  /*Tirando todas as marcações (A bolinha na frente de cada item)*/
+    display: inline-block; /*Deixando tudo em uma única linha*/
+}
+
+.header ul li a{   /*Configurando os links da âncora*/
+    display: block;  /*Posicionando os links lado a lado*/
+    text-decoration: none;  /*Tirando decoração do texto*/
+    text-transform: uppercase; /*Coloca todas letras em maiúscula*/
+    color: #ffffff;  /*Cor das letras*/
+    font-size: 1.1em;   /*Tamanho da fonte do texto no header*/
+    font-family: Arial, Helvetica, sans-serif;  /*Tipo da fonte (modelo)*/
+    letter-spacing: 2px;  /*Controlando os espaços em branco entre as letras*/
+    font-weight: normal;  /*Intensidade da fonte*/
+    padding-inline-start: 25px;  /*Evita definir uma distância para cada lado separadamente*/
+    transition: all ease 0.5s;  /*Definindo a transição entre dois estados de um elemento*/
+    border-radius: 5px;  /*Arredondando as bordas*/
+}
+
+.header ul li a:hover{   /*Mudando o elemento ao passar o cursor do mouse muda de cor*/
+    background-color: #e8e7f185;  /*Cor de fundo*/
+    cursor: pointer;  /*deixando o cursor como ponteiro*/
+}
+
+#txt{
+    text-align: left;  /*Alinhando os texto para o lado esquerdo*/
+    padding-left: 10px;  /*Espaçamento no lado esquerdo*/
+}
+
+header > h1{    /*Configurando o título do cabeçalho*/
+    color: white;  /*Cor das letras */
+    font-family: 'Times New Roman', Times, serif;  /*Estilo das letras*/
+    font-size: 3em;  /*Tamanho da letra*/
+    font-weight: bold;  /*Deixando a letra em negrito*/
+    text-align: center;  /*alinhando o título no centro*/
+    padding-bottom: 20px;  /*Distância da parte inferior do cabeçalho*/
+    padding-top: 20px;  /*Distância da parte superior do cabeçalho*/
+}
+#col{
+    padding-top: 10%;  /*Dando espaçamento na parte superior*/
+}
+
+/*Configurando o conteúdo principal do site dentro do body*/
+div{
+    color: white;   /*cor da letra*/
+}
+
+.btn{
+    text-decoration: none;  /*Tirando decoração do texto*/
+    color: #ffffff;  /*Cor das letras*/
+    font-size: 1.1em;   /*Tamanho da fonte do texto no header*/
+    font-family: Arial, Helvetica, sans-serif;  /*Tipo da fonte (modelo)*/
+    letter-spacing: 2px;  /*Controlando os espaços em branco entre as letras*/
+    font-weight: normal;  /*Intensidade da fonte*/
+    padding-inline-start: 25px;  /*Evita definir uma distância para cada lado separadamente*/
+    transition: all ease 0.5s;  /*Definindo a transição entre dois estados de um elemento*/
+    border-radius: 5px;  /*Arredondando as bordas*/
+}
+
+div .btn{
+    display: inline-block; /*Deixando o bloco em linha*/
+    width: 90px; /*Lrgura*/
+    border-radius: 60px;  /*Arredondando todas as bordas*/
+    background-color: rgba(233, 230, 230, 0.5); /*Cor e fundo do botão*/
+    color: #3b3737;  /*Cor da letra do botão*/
+    font-weight: 600;  /*Deixando a fonte mais grossa*/
+}
+
+ div .btn:hover{  /*mudando a cor do botão quando o mouse passar sobre o botão*/
+    background-color: rgba(0, 0, 0, 0.5);  /*Deixando a cor mais clara do botão*/
+    color:white;  /*Cor da fonte*/
+}

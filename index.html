@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Di Bonito</title>
+
+    <!--Link css-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Link favicon-->
+    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+
+    <!--Link Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+<!--Relógio feito em javascript-->
+    <script type="text/javascript">
+        function startTime()
+        {
+        var today=new Date();
+        var h=today.getHours();
+        var m=today.getMinutes();
+        var s=today.getSeconds();
+        // adicione um zero na frente de números<10
+        m=checkTime(m);
+        s=checkTime(s);
+        document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+        t=setTimeout('startTime()',500);
+        }
+        function checkTime(i)
+        {
+        if (i<10)
+        {
+        i="0" + i;
+        }
+        return i;
+        }
+        </script>
+        <script src="https://kit.fontawesome.com/9f03.js"></script>
+
+</head>
+<body onload="startTime ()">
+    
+        <div class="header">
+            <div id="txt"></div>
+
+            <!--Links do cabeçalho-->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="experiencia.html">Experiência</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+    
+        </div>
+   
+        <!--Início do site-->
+    <main>
+        <article> 
+            <div class="container">  <!--Criando uma classe container para deixar o conteúdo alinhado corretamente-->
+                <div class="row">  <!--linha-->
+
+                    <div class="col-12 col-sm-6 col-md3" id="col">  <!--Configurando o tamanho das colunas-->
+                        Oi, eu sou  <!--Texto -->
+                        <h3>Rafael Di Bonito</h3>  <!--Subtítulo-->
+                        Cursando Análise e Desenvolvimento de Sistemas  <!--Texto -->
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="container"> <!--Criando uma classe container para deixar o conteúdo alinhado corretamente-->
+                <div class="row-cols-auto"> <!--Linha e coluna automática-->
+                    <a href="http://linkedin.com/in/rafael-di-bonito-418a6a215" target="_blank"><button type="button" class="btn btn- btn-sm">Linkedin</button></a> &nbsp &nbsp; <!--link do Linkedin-->
+                    
+                    <a href="https://github.com/dibonito" target="_blank"><button type="button" class="btn btn- btn-sm" onclick() > GitHub </button></a> <!--Link do Github-->
+                </div>
+
+            </div>
+        </article>
+    </main>
+</body>
+</html>

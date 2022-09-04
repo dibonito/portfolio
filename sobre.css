@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+*{  /*seletor universal do css*/
+    margin: 0px;  /*Tirando todas as margens do site*/
+    padding: 0px;  /*Tirando todas os espaços do site*/
+}
+
+body{ /*Corpo do nosso site*/
+    background: url(img/workspace-1280538_1280.jpg) no-repeat center top fixed;  /*Imagem de fundo do site e configurações para deixar a imagem fixa na página*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+ /*Fazendo as configurações do cabeçalho e dos links de navegação*/
+ .header{  
+    width: 100%;   /*Largura do cabeçalho*/
+    background-color: rgba(0, 0, 0, .3);   /*Dando a transparência para o cabeçalho*/
+    padding-top: 30px;  /*Dando espaçamento no topo*/
+    padding-bottom: 20px;  /*Dando espaçamento na parte de baixo*/
+}
+
+.header ul{  /*Configurando as listas dentro do header*/
+    text-align: center;  /*Alinhando o texto das listas*/
+
+}
+
+.header ul li{  /*Configurando os conteúdos dentro da lista do header*/
+    list-style: none;  /*Tirando todas as marcações (A bolinha na frente de cada item)*/
+    display: inline-block; /*Deixando tudo em uma única linha*/
+}
+
+.header ul li a{   /*Configurando os links da âncora*/
+    display: block;  /*Posicionando os links lado a lado*/
+    text-decoration: none;  /*Tirando decoração do texto*/
+    text-transform: uppercase; /*Coloca todas letras em maiúscula*/
+    color: #ffffff;  /*Cor das letras*/
+    font-size: 1.1em;   /*Tamanho da fonte do texto no header*/
+    font-family: Arial, Helvetica, sans-serif;  /*Tipo da fonte (modelo)*/
+    letter-spacing: 2px;  /*Controlando os espaços em branco entre as letras*/
+    font-weight: normal;  /*Intensidade da fonte*/
+    padding-inline-start: 25px;  /*Evita definir uma distância para cada lado separadamente*/
+    transition: all ease 0.5s;  /*Definindo a transição entre dois estados de um elemento*/
+    border-radius: 5px;  /*Arredondando as bordas*/
+}
+
+.header ul li a:hover{  /*Mudando o elemento ao passar o cursor do mouse muda de cor*/
+    background-color: #e8e7f185;   /*Cor de fundo*/
+    cursor: pointer;  /*deixando o cursor como ponteiro*/
+    
+} /*fim da configuração do header*/
+
+/*Configurando os conteúdos do site*/
+main{
+    min-width: 300px;   /*Largura mínima*/
+    max-width: 1000px;  /*Largura máxima*/
+    margin: auto;   /*Margem automática*/
+    margin-bottom: 30px;  /*Dando margem na parte inferior*/
+    padding: 20px;  /*distância em todo o conteúdo*/
+    overflow: auto; /*Tirando a rolagem lateral*/
+    padding-left: 80px;  /*dando distância do lado esquerdo*/
+    padding-top: 60px;   /*Dando distância na parte superior*/
+    color: white;  /*Cor das letras*/
+}
+article{
+    display: block; /*Deixando o elemento em bloco*/  
+    min-height: 500px;  /*Altura mínima*/
+}
+article > h1{ /*Congirurando o h1 dentro do article*/
+    padding-bottom: 20px;  /*Dando distância na parte inferior */
+    font-family: 'Times New Roman', Times, serif;  /*Tipo da família da fonte*/
+    font-weight: bold;  /*Deixando a fonte em negrito*/
+    font-size: 2.5em; /*Tamanho da fonte*/
+    color: white;  /*Cor da fonte*/
+}
+article p{
+    font-family: Arial, Helvetica, sans-serif; /*Tipo da família da fonte*/
+    color: white;  /*Cor da fonte*/
+}
+article h6{
+    font-family: 'Times New Roman', Times, serif;  /*Tipo da família da fonte*/
+    color: #ffffff;  /*Cor da fonte*/
+    font-weight: bold;  /*Deixando a fonte em negrito*/
+    font-size: 1.1em;  /*Tamanho da fonte*/
+}
+
+#pular{
+    margin-top: 20%;  /*Margem superior*/
+}
+#centro{
+    text-align: center;  /*Centralizando o conteúdo no centro*/
+}
+
+
+
+
+
+
+
+
+
